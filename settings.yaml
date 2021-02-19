@@ -1,0 +1,319 @@
+sns:
+  label: 社交资料
+  items:
+    rss:
+      name: rss
+      label: RSS
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    twitter:
+      name: twitter
+      label: Twitter
+      type: text
+      placeholder: '只需填入 Twitter 用户名即可'
+    email:
+      name: email
+      label: Email
+      type: text
+      placeholder: '只需填入邮箱地址即可'
+    github:
+      name: github
+      label: Github
+      type: text
+      placeholder: '只需填入 Github 用户名即可'
+    qq:
+      name: qq
+      label: QQ
+      type: text
+      placeholder: '只需填入 QQ 号即可'
+    telegram:
+      name: telegram
+      label: Telegram
+      type: text
+      placeholder: '只需填入 Telegram Id 即可'
+sidebar:
+  label: 侧栏设置
+  items:
+    sidebar_nickname_isopen:
+      name: sidebar_nickname_isopen
+      label: 开启侧栏图片内的文字
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_nickname_prefix:
+      name: sidebar_nickname_prefix
+      label: 侧栏图片内的文字前缀
+      type: text
+      default: '网红'
+    sidebar_nickname:
+      name: sidebar_nickname
+      label: 侧栏图片内的昵称
+      type: text
+      description: '为空时默认使用后台 用户-个人资料 里设置的昵称'
+    sidebar_description:
+      name: sidebar_description
+      label: 侧栏中的一句话
+      type: text
+      placeholder: '你能抓到我么？'
+    character_attribute:
+      name: character_attribute
+      label: 人物属性
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    character_attribute_height:
+      name: character_attribute_height
+      label: 人物属性高度
+      type: text
+      placeholder: '120'
+      description: '设置完人物属性后根据自己需要高度调整，解决显示异常，单位为像素'
+    character_attribute_name_1:
+      name: character_attribute_name_1
+      label: 人物属性名称1
+      type: text
+      default: '最喜欢的作品'
+    character_attribute_value_1:
+      name: character_attribute_value_1
+      label: 人物属性内容1
+      type: text
+      default: '这是一段示例文案，111，111，111，请您按照自己需要展示的内容进行修改'
+    character_attribute_name_2:
+      name: character_attribute_name_2
+      label: 人物属性名称2
+      type: text
+      default: '最喜欢的游戏'
+    character_attribute_value_2:
+      name: character_attribute_value_2
+      label: 人物属性内容2
+      type: text
+      default: '这是一段示例文案，222，222，222，请您按照自己需要展示的内容进行修改'
+    character_attribute_name_3:
+      name: character_attribute_name_3
+      label: 人物属性名称3
+      type: text
+      default: '最喜欢的音乐'
+    character_attribute_value_3:
+      name: character_attribute_value_3
+      label: 人物属性内容3
+      type: text
+      default: '这是一段示例文案，333，333，333，请您按照自己需要展示的内容进行修改'
+    character_attribute_name_4:
+      name: character_attribute_name_4
+      label: 人物属性名称4
+      type: text
+      default: '最喜欢的图书'
+    character_attribute_value_4:
+      name: character_attribute_value_4
+      label: 人物属性内容4
+      type: text
+      default: '这是一段示例文案，444，444，444，请您按照自己需要展示的内容进行修改'
+    character_attribute_name_5:
+      name: character_attribute_name_5
+      label: 人物属性名称5
+      type: text
+      default: '最喜欢的动漫'
+    character_attribute_value_5:
+      name: character_attribute_value_5
+      label: 人物属性内容5
+      type: text
+      default: '这是一段示例文案，555，555，555，请您按照自己需要展示的内容进行修改'
+body:
+  label: 主体设置
+  items:
+    background_picture:
+      name: background_picture
+      label: body背景图片
+      type: attachment
+    slogan_text:
+      name: slogan_text
+      label: slogan
+      type: text
+      default: ''
+      placeholder: '默认为博客标题'
+      description: '建议使用英文，因为字体库只支持英文字母及英文标点符号'
+    slogan_text_color:
+      name: slogan_text_color
+      label: slogan字体颜色
+      type: text
+      default: '#ff9800'
+      placeholder: '请输入颜色码'
+      description: '填入颜色，16进制颜色：如#ff9800 或 RGB颜色：如rgb(14,127,0)'
+    sitebar_img:
+      name: sitebar_img
+      label: '侧边栏展示图片'
+      type: attachment
+    evanyou:
+      name: evanyou
+      label: evanyou线条背景
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+foot:
+  label: 底部设置
+  items:
+    blog_ran_time:
+      name: blog_ran_time
+      label: '站点运行时间统计'
+      type: text
+      description: '填入起始时间，格式：月/日/年 时:分:秒，如01/01/2020 12:00:00'
+    icp:
+      name: icp
+      label: 'ICP 备案号'
+      type: text
+      placeholder: '填入 ICP 备案号，没有则不填. '
+archives:
+  label: 归档页设置
+  items:
+    archives_include_categories:
+      name: archives_include_categories
+      label: '是否包含分类'
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+links:
+  label: 友链页设置
+  items:
+    links_grouping:
+      name: links_grouping
+      label: 友链分组
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    links_random:
+      name: links_random
+      label: 友链顺序随机
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+comment:
+  label: 评论设置
+  items:
+    comment_internal_plugin_js:
+      name: comment_internal_plugin_js
+      label: 评论模块JS
+      type: text
+      placeholder: '如果使用默认样式这里可以不填'
+      description: '评论js请在这里设置，系统设置里的js在本主题不生效'
+plugin:
+  label: 插件设置
+  items:
+    pjax_enabled:
+      name: pjax_enabled
+      label: 开启 Pjax
+      description: '如果开启了背景音乐建议开启 pjax'
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_enabled:
+      name: music_enabled
+      label: 开启背景音乐
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_source:
+      name: music_source
+      label: 音乐播放器播放源
+      type: select
+      default: netease
+      options:
+        - value: netease
+          label: 网易云音乐
+        - value: tencent
+          label: QQ音乐
+        - value: kugou
+          label: 酷狗音乐
+        - value: xiami
+          label: 虾米音乐
+        - value: baidu
+          label: 百度音乐
+    list_id:
+      name: list_id
+      label: 音乐播放器歌单ID
+      type: text
+      placeholder: '歌单ID'
+      placeholder: '默认为网易云音乐热歌榜'
+    sort_by:
+      name: sort_by
+      label: 歌单排序方式
+      default: 'list'
+      type: select
+      options:
+        - value: random
+          label: 随机
+        - value: list
+          label: 顺序
+    auto_play:
+      name: auto_play
+      label: 自动播放
+      default: false
+      type: radio
+      data-type: bool
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+other:
+  label: 其他设置
+  items:
+    back_to_top:
+      name: back_to_top
+      label: 返回顶部样式
+      type: select
+      default: cat
+      options:
+        - value: cat
+          label: 小猫
+        - value: iron_man
+          label: 钢铁侠
+    custom:
+      name: custom
+      label: 自定义样式
+      type: textarea
+      placeholder: '不需要 <style></style> 标签'
